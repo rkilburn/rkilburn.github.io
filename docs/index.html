@@ -23,8 +23,8 @@
                                 <img src="img/minion.png" style="height: 120px;">
                             </div>
                             <div class="col-md" style="padding: 22px 0 0 0;">
-                                <h4>Kubernetes & DevOps Admin</h4>
                                 <h4>Full Stack Developer</h4>
+                                <h4>Kubernetes & DevOps Admin</h4>
                                 <h4>Minions Fan</h4>
                             </div>
                         </div>
@@ -118,5 +118,19 @@
             </div>
         </div>
 </body>
+
+<script>
+    var obj = {
+        type: "web.site-load",
+        metadata: {
+            host: window.location.host,
+        }
+    };
+
+    var ajax = new XMLHttpRequest();
+    ajax.open('post', 'https://api.dev.ignition.rkilburn.cloud/analytics/events/create');
+    ajax.setRequestHeader("Content-type", "application/json;charset=UTF-8");
+    ajax.send(JSON.stringify(obj));
+</script>
 
 </html>

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "autoreload-server -w \"**/**.{html,css,js}\" ./docs 3000"
   },
   "author": "",
   "license": "ISC",
